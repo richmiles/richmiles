@@ -1,0 +1,19 @@
+{
+  "name": "richmiles",
+  "version": "1.0.0",
+  "description": "The personal website of Rich Miles.",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/richmiles/richmiles.git"
+  },
+  "author": "Rich Miles",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/richmiles/richmiles/issues"
+  },
+  "homepage": "https://github.com/richmiles/richmiles#readme"
+}
