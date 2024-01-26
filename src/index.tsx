@@ -1,4 +1,4 @@
-
+import './tailwind.css';
 import * as ReactDOM from 'react-dom/client';
 import React from 'react';
 
