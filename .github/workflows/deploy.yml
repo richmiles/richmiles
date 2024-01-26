@@ -1,12 +1,14 @@
 name: Deploy to GitHub Pages
 
 on:
-  push:
+  pull_request:
     branches:
-      - initial  # Set to your default branch
+      - main  # Set to your default branch
+    types: [closed]  
 
 jobs:
   build-and-deploy:
+    if: github.event.pull_request.merged == true
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
@@ -14,7 +16,7 @@ jobs:
     - name: Set up Node.js
       uses: actions/setup-node@v4
       with:
-        node-version: '20' # Set your Node.js version
+        node-version: '20'
 
     - name: Run deployment script
       env:
