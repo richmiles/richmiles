@@ -6,14 +6,17 @@ set -e
 npm install
 npm run build
 
-pwd  # Print the current directory
-ls -la  # List all files and directories in the current directory
+echo "Current Directory:"
+pwd
+echo "Directory Contents:"
+ls -la
 
 # Clone the target repository
 TARGET_REPO_DIR="other-repo"
 
-git remote set-url origin https://${ACCESS_TOKEN}@${TARGET_REPO_URL}
-git clone $TARGET_REPO_URL $TARGET_REPO_DIR
+echo "Cloning target repo..."
+git clone https://${ACCESS_TOKEN}@${TARGET_REPO_URL} $TARGET_REPO_DIR
+
 rm -rf $TARGET_REPO_DIR/*
 cp -r dist/* $TARGET_REPO_DIR/
 
