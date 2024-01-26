@@ -1,0 +1,23 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main  # Set to your default branch
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: '14' # Set your Node.js version
+
+    - name: Run deployment script
+      env:
+        TARGET_REPO_URL: ${{ secrets.TARGET_REPO_URL }}
+        ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+      run: bash deploy.sh
