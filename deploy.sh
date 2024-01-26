@@ -18,6 +18,7 @@ cp -r dist/* $TARGET_REPO_DIR/
 
 # Commit and push
 cd $TARGET_REPO_DIR
+ls -la
 
 echo "Committing and pushing to ${TARGET_REPO_URL}"
 git set remote origin https://${ACCESS_TOKEN}@${TARGET_REPO_URL}
