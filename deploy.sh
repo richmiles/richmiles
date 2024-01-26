@@ -20,7 +20,6 @@ rsync -av --exclude='.git' --delete dist/ $TARGET_REPO_DIR/
 cd $TARGET_REPO_DIR
 
 echo "Committing and pushing to ${TARGET_REPO_URL}"
-git set remote origin https://x-access-token:${ACCESS_TOKEN}@${TARGET_REPO_URL}
 
 git config user.name "GitHub Actions"
 git config user.email "actions@github.com"
