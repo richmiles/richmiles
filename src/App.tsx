@@ -2,6 +2,7 @@ import React from 'react';
 
 function App() {
 
+export function App() {
   return (
     <>
         <header>
