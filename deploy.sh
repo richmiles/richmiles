@@ -6,20 +6,21 @@ set -e
 npm install
 npm run build
 
-pwd  # Print the current directory
-ls -la  # List all files and directories in the current directory
-
 # Clone the target repository
 TARGET_REPO_DIR="other-repo"
 
-git remote set-url origin https://${ACCESS_TOKEN}@${TARGET_REPO_URL}
-git clone $TARGET_REPO_URL $TARGET_REPO_DIR
-rm -rf $TARGET_REPO_DIR/*
-cp -r dist/* $TARGET_REPO_DIR/
+echo "Cloning target repo ${TARGET_REPO_URL} into ${TARGET_REPO_DIR}"
+git clone https://x-access-token:${ACCESS_TOKEN}@${TARGET_REPO_URL} $TARGET_REPO_DIR
 
+# Copy over the artifacts
+echo "Copying artifacts from dist to ${TARGET_REPO_DIR}"
+rsync -av --exclude='.git' --delete dist/ $TARGET_REPO_DIR/
 
 # Commit and push
 cd $TARGET_REPO_DIR
+
+echo "Committing and pushing to ${TARGET_REPO_URL}"
+
 git config user.name "GitHub Actions"
 git config user.email "actions@github.com"
 git add .
