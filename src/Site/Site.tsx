@@ -1,16 +1,7 @@
-import { css } from '@emotion/core';
-import theme from '../theme';
+import React from 'react';
 
-interface Props {
-  children: React.ReactNode;
-}
-const StyledButton: React.FC<Props> = (props) => (
-    <button
-        css={css`
-            background-color: ${theme.colors.primary};
-            color: white;
-            font-size: ${theme.fontSizes.body};
-        `}
-        {...props}
-    />
-);
+const Site = () => {
+    return (<h1>Hello, world</h1>);
+  }
+
+export default Site;
