@@ -13,7 +13,7 @@ echo "Cloning target repo ${TARGET_REPO_URL}"
 git clone https://${ACCESS_TOKEN}@${TARGET_REPO_URL} $TARGET_REPO_DIR
 
 # Copy over the artifacts
-rm -rf $TARGET_REPO_DIR/*
+rsync -av --exclude='.git' --delete dist/ $TARGET_REPO_DIR/S
 cp -r dist/* $TARGET_REPO_DIR/
 
 # Commit and push
