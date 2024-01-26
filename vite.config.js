@@ -1,6 +1,10 @@
 module.exports = {
     root: 'src',
-    outdir: 'dist',
-    assetsDir: 'assets',
-    port: 5177
+    build: {
+        outDir: '../dist',  // This sets the output directory to be 'dist' at the project root
+        assetsDir: 'assets',
+    },
+    server: {
+        port: 5177
+    }
 }
