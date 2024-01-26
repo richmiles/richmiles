@@ -19,6 +19,12 @@ rsync -av --exclude='.git' --delete dist/ $TARGET_REPO_DIR/
 # Commit and push
 cd $TARGET_REPO_DIR
 
+echo "Checking for changes"
+if git diff --quiet; then
+    echo "No changes to the output on this push; exiting."
+    exit 0
+fi
+
 echo "Committing and pushing to ${TARGET_REPO_URL}"
 
 git config user.name "GitHub Actions"
