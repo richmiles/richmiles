@@ -6,6 +6,9 @@ set -e
 npm install
 npm run build
 
+pwd  # Print the current directory
+ls -la  # List all files and directories in the current directory
+
 # Clone the target repository
 TARGET_REPO_DIR="other-repo"
 
