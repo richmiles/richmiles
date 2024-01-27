@@ -1,6 +1,8 @@
 import React from "react";
 import '../styles/global.css';
 
+import tangledWeb from '../images/tangled-web.png';
+
 const Site = () => {
     return (
         <div className="container mx-auto p-6 bg-base-200 shadow-xl rounded-lg mt-2 bg-containerBackground" >        
@@ -22,7 +24,7 @@ const Site = () => {
                     </div>
                 </div>
                 <div className="md:w-1/2 flex justify-center items-center">
-                    <img src="../images/tangled-web.png" alt="Tangled Web" className="max-w-1/2 h-auto rounded-lg shadow-lg" />
+                    <img src={tangledWeb} alt="Tangled Web" className="max-w-1/2 h-auto rounded-lg shadow-lg" />
                 </div>
             </div>
         </div>
