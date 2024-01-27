@@ -6,7 +6,6 @@ type NavItemProps = {
     label: string;
 }
 
-
 const NavBar = () => {
     return (
         <nav className="bg-transparent p-4 text-textPrimary flex justify-center">
