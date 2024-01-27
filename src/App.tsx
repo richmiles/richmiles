@@ -1,6 +1,5 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import background from './images/background.png';
 import NavBar from './components/Navbar';
 import Home from './components/Home';
 import Me from './components/Me';
@@ -10,23 +9,9 @@ import Work from './components/Work';
 export function App() {
   return (
     <Router>
-      <div className="relative min-h-screen"
-        style={{
-          backgroundImage: `url(${background})`,
-          backgroundSize: `cover`,
-          backgroundPosition: `center`,
-        }}
-      >
-        {/* Blur background */}
-        <div
-          className="absolute inset-0"
-          style={{
-            backdropFilter: `blur(5px)`,
-          }}
-        ></div>
+      <div className="min-h-screen bg-gradient-to-br from-base to-darkblue">
 
-        {/* Content */}
-        <div className="relative z-10">
+          {/* Content */}
           <NavBar />
           <Routes>
             <Route path="/" element={<Home />} />
@@ -35,7 +20,6 @@ export function App() {
             <Route path="/work" element={<Work />} />
           </Routes>
         </div>
-      </div>
     </Router>
   );
 }

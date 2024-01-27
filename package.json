@@ -18,18 +18,13 @@
   },
   "homepage": "https://github.com/richmiles/richmiles#readme",
   "dependencies": {
-    "autoprefixer": "^10.4.17",
-    "postcss": "^8.4.33",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.21.3",
-    "tailwindcss": "^3.4.1"
+    "react-router-dom": "^6.21.3"
   },
   "devDependencies": {
-    "@emotion/css": "^11.10.5",
     "@types/react": "^18.0.26",
     "@types/react-dom": "^18.0.10",
-    "parcel": "^2.11.0",
     "process": "^0.11.10",
     "typescript": "^5.3.3",
     "vite": "^5.0.12"

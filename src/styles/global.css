@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+
+
+/* styles/global.css */
+@layer components {
+  .heading-secondary {
+      @apply text-lg font-bold font-headings text-secondary;
+  }
+}
