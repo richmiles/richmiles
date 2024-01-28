@@ -13,15 +13,15 @@ echo "Cloning target repo ${TARGET_REPO_URL} into ${TARGET_REPO_DIR}"
 git clone https://x-access-token:${ACCESS_TOKEN}@${TARGET_REPO_URL} $TARGET_REPO_DIR
 
 # Copy over the artifacts
-echo "Copying artifacts from dist to ${TARGET_REPO_DIR}"
-
 # Remove everything in the target repo directory except for the .git directory
 find $TARGET_REPO_DIR -mindepth 1 -maxdepth 1 ! -name .git -exec rm -rf {} \;
 
 # Hack to make 404.html work on GitHub Pages
+echo "Copying 404.html to dist/404.html"
 cp dist/index.html dist/404.html
 
 # Copy over the artifacts
+echo "Copying artifacts from dist to ${TARGET_REPO_DIR}"
 cp -R dist/* $TARGET_REPO_DIR/
 
 # Commit and push
