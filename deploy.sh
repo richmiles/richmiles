@@ -14,7 +14,14 @@ git clone https://x-access-token:${ACCESS_TOKEN}@${TARGET_REPO_URL} $TARGET_REPO
 
 # Copy over the artifacts
 echo "Copying artifacts from dist to ${TARGET_REPO_DIR}"
+
+# Remove everything in the target repo directory except for the .git directory
 find $TARGET_REPO_DIR -mindepth 1 -maxdepth 1 ! -name .git -exec rm -rf {} \;
+
+# Hack to make 404.html work on GitHub Pages
+cp dist/index.html dist/404.html
+
+# Copy over the artifacts
 cp -R dist/* $TARGET_REPO_DIR/
 
 # Commit and push
