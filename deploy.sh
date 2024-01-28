@@ -14,7 +14,8 @@ git clone https://x-access-token:${ACCESS_TOKEN}@${TARGET_REPO_URL} $TARGET_REPO
 
 # Copy over the artifacts
 echo "Copying artifacts from dist to ${TARGET_REPO_DIR}"
-rsync -av --exclude='.git' --delete dist/ $TARGET_REPO_DIR/
+find $TARGET_REPO_DIR -mindepth 1 -maxdepth 1 ! -name .git -exec rm -rf {} \;
+cp -R dist/* $TARGET_REPO_DIR/
 
 # Commit and push
 cd $TARGET_REPO_DIR
