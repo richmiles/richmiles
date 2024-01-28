@@ -26,6 +26,8 @@ ls -la dist
 echo "Copying artifacts from dist to ${TARGET_REPO_DIR}"
 cp -R dist/* $TARGET_REPO_DIR/
 
+ls -la $TARGET_REPO_DIR
+
 # Commit and push
 cd $TARGET_REPO_DIR
 
