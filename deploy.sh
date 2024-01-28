@@ -34,6 +34,8 @@ cd $TARGET_REPO_DIR
 echo "Checking for changes"
 git config user.name "GitHub Actions"
 git config user.email "actions@github.com"
+
+# Stage the changes
 git add .
 
 CHANGED_FILES=$(git diff --name-only --staged)
