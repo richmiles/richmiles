@@ -36,7 +36,7 @@ git config user.name "GitHub Actions"
 git config user.email "actions@github.com"
 git add .
 
-CHANGED_FILES=$(git diff --name-only)
+CHANGED_FILES=$(git diff --name-only --staged)
 if [ -z "$CHANGED_FILES" ]; then
     echo "No changes to the output on this push; exiting."
     exit 0
