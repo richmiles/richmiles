@@ -19,11 +19,12 @@ const Site = () => {
             <div className="flex flex-col md:flex-row">
                 <div className="md:w-1/2 space-y-4">
                     <div className="font-sans text-textPrimary">
-                        <h3 className="heading-secondary">React</h3>
+                        <h2 className="heading-secondary">React</h2>
                         <p>React's popularity and rich ecosystem make it an indispensable tool...</p>
-                        <h3 className="heading-secondary">TypeScript</h3>
+                        <h2 className="heading-secondary">TypeScript</h2>
                         <p>Strongly typed languages offer a robust foundation for building complex applications...</p>
-                        {/* ...and so on for each point */}
+                        <h2 className="heading-secondary">Tailwind</h2>
+                        <p>Something something wanted to learn it.</p>
                     </div>
                 </div>
                 <div className="md:w-1/2 flex justify-center items-center">
