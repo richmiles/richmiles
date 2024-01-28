@@ -32,6 +32,10 @@ ls -la $TARGET_REPO_DIR
 cd $TARGET_REPO_DIR
 
 echo "Checking for changes"
+git config user.name "GitHub Actions"
+git config user.email "actions@github.com"
+git add .
+
 CHANGED_FILES=$(git diff --name-only)
 if [ -z "$CHANGED_FILES" ]; then
     echo "No changes to the output on this push; exiting."
@@ -42,9 +46,5 @@ else
 fi
 
 echo "Committing and pushing to ${TARGET_REPO_URL}"
-
-git config user.name "GitHub Actions"
-git config user.email "actions@github.com"
-git add .
 git commit -m "Publishing new build"
 git push
