@@ -22,7 +22,8 @@ const Site = () => {
                     <h2 className="heading-secondary">TypeScript</h2>
                         <p>In my professional journey, I’ve learned that all code, no matter how elegantly crafted, inevitably erodes with time. This becomes particularly evident as codebases undergo gradual refactoring, often transforming into something barely recognizable. It’s in these phases of evolution that TypeScript truly demonstrates its value. The robust type system serves not just as a tool for error prevention, but as a living documentation of the developer’s original intent. This becomes crucial in mitigating bugs, ensuring that the code’s evolution doesn’t stray from its original principles. TypeScript isn't just a preference for me, it's a cornerstone of my web development.</p>
                         <h2 className="heading-secondary">React</h2>
-                        <p>React's popularity and rich ecosystem make it an indispensable tool...</p>
+                        <p>React, for me, is less about passion and more about practicality. It's a framework that gets the job done, has a large community, and a wealth of resources. It doesn't light my fire like TypeScript does, but it works.</p>
+                        <p>It doesn't hurt that there is a high demand for React skills in the job market. 😉</p>
                         <h2 className="heading-secondary">Tailwind</h2>
                         <p>Something something wanted to learn it.</p>
                     </div>
