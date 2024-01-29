@@ -25,7 +25,7 @@ const Site = () => {
                         <p>React, for me, is less about passion and more about practicality. It's a framework that gets the job done, has a large community, and a wealth of resources. It doesn't light my fire like TypeScript does, but it works.</p>
                         <p>It doesn't hurt that there is a high demand for React skills in the job market. 😉</p>
                         <h2 className="heading-secondary">Tailwind</h2>
-                        <p>Something something wanted to learn it.</p>
+                        <p>I'm using this site to explore Tailwind CSS, mainly to form my own opinion about its utility-first approach. Despite its popularity and the efficiency it <i>promises</i> in styling, I remain somewhat skeptical. Coming from a background of traditional CSS, I'm used to a different way of doing things. Tailwind's system of utility classes, although interesting, seems like an extra layer atop what can be done with regular CSS classes and variables. I'm giving it a fair shot, learning its nuances, but the jury's still out on whether it truly enhances my workflow or simply complicates it. In the end, I'm all for tools that make development smoother, but I'm not one to jump on a bandwagon without seeing real, tangible benefits.</p>
                     </div>
                 </div>
                 <div className="md:w-1/2 flex justify-center items-center">
