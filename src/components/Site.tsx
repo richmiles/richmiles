@@ -19,10 +19,10 @@ const Site = () => {
             <div className="flex flex-col md:flex-row">
                 <div className="md:w-1/2 space-y-4">
                     <div className="font-sans text-textPrimary">
+                    <h2 className="heading-secondary">TypeScript</h2>
+                        <p>In my professional journey, I’ve learned that all code, no matter how elegantly crafted, inevitably erodes with time. This becomes particularly evident as codebases undergo gradual refactoring, often transforming into something barely recognizable. It’s in these phases of evolution that TypeScript truly demonstrates its value. The robust type system serves not just as a tool for error prevention, but as a living documentation of the developer’s original intent. This becomes crucial in mitigating bugs, ensuring that the code’s evolution doesn’t stray from its original principles. TypeScript isn't just a preference for me, it's a cornerstone of my web development.</p>
                         <h2 className="heading-secondary">React</h2>
                         <p>React's popularity and rich ecosystem make it an indispensable tool...</p>
-                        <h2 className="heading-secondary">TypeScript</h2>
-                        <p>Strongly typed languages offer a robust foundation for building complex applications...</p>
                         <h2 className="heading-secondary">Tailwind</h2>
                         <p>Something something wanted to learn it.</p>
                     </div>
