@@ -19,13 +19,17 @@ const Site = () => {
             <div className="flex flex-col md:flex-row">
                 <div className="md:w-1/2 space-y-4">
                     <div className="font-sans text-textPrimary">
-                    <h2 className="heading-secondary">TypeScript</h2>
+                        <h2 className="heading-secondary">TypeScript</h2>
                         <p>In my professional journey, I’ve learned that all code, no matter how elegantly crafted, inevitably erodes with time. This becomes particularly evident as codebases undergo gradual refactoring, often transforming into something barely recognizable. It’s in these phases of evolution that TypeScript truly demonstrates its value. The robust type system serves not just as a tool for error prevention, but as a living documentation of the developer’s original intent. This becomes crucial in mitigating bugs, ensuring that the code’s evolution doesn’t stray from its original principles. TypeScript isn't just a preference for me, it's a cornerstone of my web development.</p>
                         <h2 className="heading-secondary">React</h2>
                         <p>React, for me, is less about passion and more about practicality. It's a framework that gets the job done, has a large community, and a wealth of resources. It doesn't light my fire like TypeScript does, but it works.</p>
                         <p>It doesn't hurt that there is a high demand for React skills in the job market. 😉</p>
                         <h2 className="heading-secondary">Tailwind</h2>
                         <p>I'm using this site to explore Tailwind CSS, mainly to form my own opinion about its utility-first approach. Despite its popularity and the efficiency it <i>promises</i> in styling, I remain somewhat skeptical. Coming from a background of traditional CSS, I'm used to a different way of doing things. Tailwind's system of utility classes, although interesting, seems like an extra layer atop what can be done with regular CSS classes and variables. I'm giving it a fair shot, learning its nuances, but the jury's still out on whether it truly enhances my workflow or simply complicates it. In the end, I'm all for tools that make development smoother, but I'm not one to jump on a bandwagon without seeing real, tangible benefits.</p>
+                        <h2 className="heading-secondary">Vite</h2>
+                        <p>
+                            Vite is a breath of fresh air. It is simple and efficient. That's it. That's the reason.
+                        </p>
                     </div>
                 </div>
                 <div className="md:w-1/2 flex justify-center items-center">
